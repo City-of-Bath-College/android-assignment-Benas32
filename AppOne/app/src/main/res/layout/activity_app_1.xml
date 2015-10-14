@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".APP_1">
+
+
+
+    <TextView
+        android:id="@+id/lblQuestion"
+        android:text="Does Musa rock?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textSize="22sp"
+        android:gravity="center" />
+
+
+    <ImageView
+        android:id="@+id/imgPicture"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/musa_snow_white"
+        android:layout_above="@id/lblQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="20dp"/>
+
+
+
+    <Button
+        android:id="@+id/btnFalse"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/lblQuestion"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:text="FALSE"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:background="#D50000"/>
+
+    <Button
+        android:id="@+id/btnTrue"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/lblQuestion"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:text="TRUE"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:background="#4CAF50"/>
+
+    <Button
+        android:id="@+id/btnSkip"
+        android:layout_width="140dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/lblQuestion"
+        android:layout_alignParentRight="true"
+        android:layout_margin="120dp"
+        android:text="SKIP"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:background="#9E9E9E"/>
+
+</RelativeLayout>

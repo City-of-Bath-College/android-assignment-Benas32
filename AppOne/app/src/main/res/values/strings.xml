@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">App One</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="q1">Does Musa Rock?</string>
+    <string name="q2a">Are You Sure?</string>
+    <string name="q2b">Hell Yeah!</string>
+    <string name="action_settings">Settings</string>
+</resources>
