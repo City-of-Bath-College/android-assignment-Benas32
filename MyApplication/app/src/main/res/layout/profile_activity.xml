@@ -1,0 +1,98 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F44336"
+    tools:context="com.example.benas.myapplication.ProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/imgBanner"
+        android:layout_width="450dp"
+        android:layout_height="215dp"
+        android:src="@drawable/banner" />
+
+    <TextView
+        android:id="@+id/lblName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgBanner"
+        android:layout_alignParentRight="true"
+        android:paddingTop="10dp"
+        android:paddingRight="20dp"
+        android:text="Benas Mikalauskas"
+        android:textSize="26sp"
+        android:textColor="#000000"
+        />
+
+    <ImageView
+        android:id="@+id/imgTwitter"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/twitter"
+        android:layout_below="@+id/lblName"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgTwitter"
+        android:layout_alignBottom="@+id/imgTwitter"
+        android:layout_toRightOf="@+id/imgTwitter"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="MakruchaLT"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        />
+
+    <ImageView
+        android:id="@+id/imgEmail"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/email"
+        android:layout_below="@+id/imgTwitter"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgEmail"
+        android:layout_alignBottom="@+id/imgEmail"
+        android:layout_toRightOf="@+id/imgEmail"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="Benas32@gmail.com"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        />
+
+    <ImageView
+        android:id="@+id/imgAddress"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/address"
+        android:layout_below="@+id/imgEmail"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgAddress"
+        android:layout_alignBottom="@+id/imgAddress"
+        android:layout_toRightOf="@+id/imgAddress"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:text="Bath, England"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        />
+
+</RelativeLayout>

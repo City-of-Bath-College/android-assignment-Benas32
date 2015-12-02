@@ -1,0 +1,67 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <TextView
+        android:id="@+id/lblQuestion"
+        android:text="Hello world!"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btnTrue"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/lblQuestion"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="30dp"
+        android:background="#4CAF50"
+        android:text="TRUE"
+        android:textSize="24sp"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnFalse"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:background="#F44336"
+        android:text="FALSE"
+        android:textSize="24sp"
+        android:padding="10dp"
+        android:layout_alignTop="@+id/btnTrue"
+        android:layout_alignRight="@+id/imgPicture"
+        android:layout_alignEnd="@+id/imgPicture" />
+
+    <ImageView
+        android:id="@+id/imgPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/norway"
+        android:layout_above="@id/lblQuestion"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="30dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/lblScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Score: 0"
+        android:textColor="#BDBDBD"
+        android:textSize="30sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toRightOf="@+id/btnTrue"
+        android:layout_toEndOf="@+id/btnTrue" />
+
+</RelativeLayout>
