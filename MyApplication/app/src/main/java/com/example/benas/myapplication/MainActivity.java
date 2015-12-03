@@ -96,17 +96,6 @@ public class MainActivity extends ActionBarActivity {
     private void generateQuestion(){
         questions = new ArrayList<>();
 
-        /*questions.add(new QuestionObject("Is the capital of Lithuania Riga?", false, R.drawable.lithuania));
-        questions.add(new QuestionObject("Is the capital of Canada Toronto?", false, R.drawable.canada));
-        questions.add(new QuestionObject("Is the capital of Russia Moscow?", true, R.drawable.russia));
-        questions.add(new QuestionObject("Is the capital of France Lyon?", false, R.drawable.france));
-        questions.add(new QuestionObject("Is the capital of Norway Oslo?", true, R.drawable.norway));
-        questions.add(new QuestionObject("Is the capital of Germany Berlin?", true, R.drawable.germany));
-        questions.add(new QuestionObject("Is the capital of China Honk Kong?", false, R.drawable.china));
-        questions.add(new QuestionObject("Is the capital of United States Seattle?", false, R.drawable.usa));
-        questions.add(new QuestionObject("Is the capital of Spain Madrid?", true, R.drawable.spain));
-        questions.add(new QuestionObject("Is the capital of England Bath?", false, R.drawable.england));*/
-
         questions.add(new QuestionObject("XswXYoqd2r", R.drawable.lithuania));
         questions.add(new QuestionObject("gAa57RuCQ6", R.drawable.canada));
         questions.add(new QuestionObject("WqBHXcyHFR", R.drawable.russia));

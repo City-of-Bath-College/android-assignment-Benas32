@@ -25,6 +25,7 @@ public class IntroductionActivity extends ActionBarActivity {
         setContentView(R.layout.activity_introduction);
 
         //Parse.enableLocalDatastore(this);
+        Parse.enableLocalDatastore(this);
 
         Parse.initialize(this, "i9nFLx6PXDZKzuU2axG36m6DfVFC2Ut3FAkrBccO", "nTAHXRqge41QUFKXjo1c4fZrBd6hxi84wvMlOfvy");
 
