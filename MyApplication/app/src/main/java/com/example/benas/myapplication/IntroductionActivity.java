@@ -36,7 +36,7 @@ public class IntroductionActivity extends ActionBarActivity {
         btnPlay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(IntroductionActivity.this, MainActivity.class);
+                Intent i = new Intent(IntroductionActivity.this, GameOptionsActivity.class);
                 startActivity(i);
             }
         });

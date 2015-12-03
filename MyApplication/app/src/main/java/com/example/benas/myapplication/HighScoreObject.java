@@ -1,8 +1,5 @@
 package com.example.benas.myapplication;
 
-/**
- * Created by Benas on 30/11/2015.
- */
 public class HighScoreObject {
     //nothing here!
     private String name;

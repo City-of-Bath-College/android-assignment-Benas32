@@ -7,5 +7,8 @@
     <string name="title_activity_introduction">IntroductionActivity</string>
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="title_activity_high_score">HighScoreActivity</string>
+    <string name="title_activity_game_option2">GameOptionActivity2</string>
+    <string name="title_activity_main_building">MainBuildingActivity</string>
+    <string name="title_activity_highscore_menu">HighscoreMenu</string>
 
 </resources>

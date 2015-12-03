@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.benas.myapplication.GameOptionActivity"
+    android:background="#000000" >
+
+    <ImageView
+        android:id="@+id/imgPicture"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/categories"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="0dp"
+        />
+
+    <TextView
+        android:id="@+id/lblCategories"
+        android:text="Categories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dp"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        android:gravity="center"
+        />
+
+    <Button
+        android:id="@+id/btnCapitals"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lblCategories"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="#f6af02"
+        android:text="CAPITALS"
+        android:textSize="24sp"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnBuildings"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnCapitals"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="#53a2cc"
+        android:text="BUILDINGS"
+        android:textSize="24sp"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/btnBuildings"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:background="#8cd421"
+        android:text="GO BACK"
+        android:textSize="24sp"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>
+

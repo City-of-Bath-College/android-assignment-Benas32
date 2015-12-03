@@ -27,7 +27,7 @@ import java.util.List;
 import io.paperdb.Paper;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainBuildingActivity extends ActionBarActivity {
 
 
     //variables go here
@@ -53,7 +53,7 @@ public class MainActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_capitals);
+        setContentView(R.layout.activity_main_building);
 
         //connect variables to interface items
         btnFalse = (Button)findViewById(R.id.btnFalse);
@@ -96,27 +96,16 @@ public class MainActivity extends ActionBarActivity {
     private void generateQuestion(){
         questions = new ArrayList<>();
 
-        /*questions.add(new QuestionObject("Is the capital of Lithuania Riga?", false, R.drawable.lithuania));
-        questions.add(new QuestionObject("Is the capital of Canada Toronto?", false, R.drawable.canada));
-        questions.add(new QuestionObject("Is the capital of Russia Moscow?", true, R.drawable.russia));
-        questions.add(new QuestionObject("Is the capital of France Lyon?", false, R.drawable.france));
-        questions.add(new QuestionObject("Is the capital of Norway Oslo?", true, R.drawable.norway));
-        questions.add(new QuestionObject("Is the capital of Germany Berlin?", true, R.drawable.germany));
-        questions.add(new QuestionObject("Is the capital of China Honk Kong?", false, R.drawable.china));
-        questions.add(new QuestionObject("Is the capital of United States Seattle?", false, R.drawable.usa));
-        questions.add(new QuestionObject("Is the capital of Spain Madrid?", true, R.drawable.spain));
-        questions.add(new QuestionObject("Is the capital of England Bath?", false, R.drawable.england));*/
-
-        questions.add(new QuestionObject("XswXYoqd2r", R.drawable.lithuania));
-        questions.add(new QuestionObject("gAa57RuCQ6", R.drawable.canada));
-        questions.add(new QuestionObject("WqBHXcyHFR", R.drawable.russia));
-        questions.add(new QuestionObject("68VFx2U4Jd", R.drawable.france));
-        questions.add(new QuestionObject("cJyAm8oZQn", R.drawable.norway));
-        questions.add(new QuestionObject("uDuL2g9lbu", R.drawable.germany));
-        questions.add(new QuestionObject("YR2stY93op", R.drawable.china));
-        questions.add(new QuestionObject("kJ1PzYTl0Q", R.drawable.usa));
-        questions.add(new QuestionObject("FN4NoZmYA9", R.drawable.spain));
-        questions.add(new QuestionObject("rxZwrSTM4I", R.drawable.england));
+        questions.add(new QuestionObject("OfNDVXr9jw", R.drawable.mahal));
+        questions.add(new QuestionObject("u7KhFgsvQZ", R.drawable.palace));
+        questions.add(new QuestionObject("JMtlax0Pts", R.drawable.pyramids));
+        questions.add(new QuestionObject("acsx1kuEaf", R.drawable.opera));
+        questions.add(new QuestionObject("X0EHjJi3Li", R.drawable.empire));
+        questions.add(new QuestionObject("23hnZcdQr3", R.drawable.trakai));
+        questions.add(new QuestionObject("MAmxoujYR9", R.drawable.stonehenge));
+        questions.add(new QuestionObject("uQmxCoS5II", R.drawable.hoolywood));
+        questions.add(new QuestionObject("o3Uo1Y3WYl", R.drawable.liberty));
+        questions.add(new QuestionObject("PgGcjkfAaN", R.drawable.eiffel));
     }
 
     private void setUpQuestion() {
@@ -127,14 +116,14 @@ public class MainActivity extends ActionBarActivity {
 
             currentQuestion = questions.get(index);
 
-            ParseQuery<ParseObject> query = ParseQuery.getQuery("Question");
+            ParseQuery<ParseObject> query = ParseQuery.getQuery("QuestionBuildings");
             query.getInBackground(currentQuestion.getQuestion(), new GetCallback<ParseObject>() {
                 public void done(ParseObject object, ParseException e) {
                     if (e == null) {
                         // object will be your game score
                         String textQuestion = object.getString("Question");
                         lblQuestion.setText(textQuestion);
-                        expectedAnswer = object.getBoolean("answer");
+                        expectedAnswer = object.getBoolean("Answer");
                         imgPicture.setImageResource(currentQuestion.getPicture());
                         index++;
                     } else {
@@ -150,19 +139,19 @@ public class MainActivity extends ActionBarActivity {
 
         MediaPlayer player;
         if (answer == expectedAnswer){
-        //you were right!
-        score ++;
+            //you were right!
+            score ++;
 
             lblScore.setText("Score: " + score);
-            Toast.makeText(MainActivity.this, "Right!!!", Toast.LENGTH_SHORT).show();
-            player = MediaPlayer.create(MainActivity.this,R.raw.correct); // plays correct sound
+            Toast.makeText(MainBuildingActivity.this, "Right!!!", Toast.LENGTH_SHORT).show();
+            player = MediaPlayer.create(MainBuildingActivity.this,R.raw.correct); // plays correct sound
             player.start();
 
         } else {
 
             //you were wrong!
-            Toast.makeText(MainActivity.this, "Wrong!!!", Toast.LENGTH_SHORT).show();
-            player = MediaPlayer.create(MainActivity.this,R.raw.wrong); // plays error sound
+            Toast.makeText(MainBuildingActivity.this, "Wrong!!!", Toast.LENGTH_SHORT).show();
+            player = MediaPlayer.create(MainBuildingActivity.this,R.raw.wrong); // plays error sound
             player.start();
         }
 
@@ -175,7 +164,7 @@ public class MainActivity extends ActionBarActivity {
         builder.setTitle("Enter your name:");
 
         // Set up input
-        final EditText input = new EditText(MainActivity.this);
+        final EditText input = new EditText(MainBuildingActivity.this);
         // Specify the type of input expected
         input.setInputType(InputType.TYPE_CLASS_TEXT | InputType.TYPE_TEXT_VARIATION_PERSON_NAME);
         builder.setView(input);
